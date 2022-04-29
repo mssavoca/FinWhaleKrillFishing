@@ -12,7 +12,7 @@ library(ncdf4)
 library(raster)
 
 
-
+#Shapefile of Marine Protected Areas 
 SO_MPAs <- st_read("mpa-shapefile-EPSG102020.shp")
 
 
