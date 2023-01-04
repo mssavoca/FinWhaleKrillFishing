@@ -481,7 +481,9 @@ def generate_panel_map(data_dict, ax=None, add_sic=True, focus_box_size=[5, 10],
         _plot_box_avg_data(axes_list[2:], data_dict, focus_box=focus_box_coords, fz=fz, tr=tr, focus_years=[2021, 2022])
         
         if save_plot:
-            plt.savefig(os.path.join(plot_dir, 'figure2_%s_map%s'%(map_vble, fig_fmt)), dpi=dpi, bbox_inches='tight')
+            #fname = 'figure2_%s_map_dpi%s%s'%(map_vble, dpi, fig_fmt)
+            fname = 'figure2_dpi%s%s'%(dpi, fig_fmt)
+            plt.savefig(os.path.join(plot_dir, fname), dpi=dpi, bbox_inches='tight')
         
     else:
         if save_plot:
